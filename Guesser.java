@@ -1,26 +1,18 @@
 import java.io.Console;
+import java.util.*;
 
-/**
- * Assignment 1 - Guessing Game
- * 
- * Here's the unfinished source code
- * for the Guesser class. It is your
- * task to complete the missing parts.
- */
 public class Guesser {
   private int low;
   private int high;
+
+
 
 public Guesser(int low, int high){
   this.low = low;
   this.high = high;
 }
 
-  /*
-   * Task 2. Complete the start() method, so that
-   * in the method body, you call first the
-   * rules() method, next the doGuesses() method.
-   */
+ 
   public void start() {
     rules();
     doGuesses();
@@ -46,11 +38,28 @@ public Guesser(int low, int high){
    */
   private String getReply() {
     String reply = null;
+
+    while (true) {
+    
+    reply = new Scanner(System.in).nextLine();
+      if(reply.equalsIgnoreCase("F") || reply.equalsIgnoreCase("T")){
+        break;
+      }
+      else{
+        System.out.println("Please, answer T (for true) or F (for false)");
+      }
+
+    }
+
+    return reply;
+
     // Write code here which reads a String from the console.
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
     // When you have gotten a valid reply, return it.
-    return reply;
+
+
+    
   }
 
   private void doGuesses() {
