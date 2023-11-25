@@ -1,0 +1,21 @@
+När använder man add respektive commit?
+
+Add används när man vill lägga till filer inför nästa commit, läggs till i "staging arean"
+Commit används när man vill spara ändringarna i staging arean, där man också skriver ett meddelande om vad man gjort
+
+Vad är pull repektive push?
+
+Pull används för att "skaffa" ändringar från ett remote repository till nuvarande branchen
+Push skickar ändringarna du gjort till ett remote repository så andra personer kan se det och själva använda pull
+
+När använder man log respektive status?
+
+Log visar commit history, en lista på de senaste commitsen
+Status visar staging arean, vad som är redo att commitas
+
+Vad är en Git branch och varför är de viktiga?
+
+En branch är en "gren" av en projekt där man kan göra ändringar utan att det påverkar huvudversionen eller
+andra branches. Brancher är viktiga för att man kan ändra en specifik del av ett projekt utan att det
+påverkar huvudversionen, det underlättar också när man är flera som jobbar på ett projekt. Branches helt enkelt 
+gör det lättare att organisera sitt projekt samt underlättar för samarbete.
